@@ -7,7 +7,7 @@ import LoginPage from "./pages/introduction/login/login-page";
 import HomePage from "./pages/main/home/home-page";
 import SettingsPage from "./pages/main/settings/settings-page";
 import EditItemPage from "./pages/edit-item/edit-item-page";
-import ListPage from "./pages/list/view/list-page";
+import ViewListPage from "./pages/list/view/view-list-page";
 import CreateListPage from "./pages/list/create-list/create-list-page";
 import EditListPage from "./pages/list/edit-list/edit-list-page";
 import CreateItemPage from "./pages/item/create-item/create-item-page";
@@ -28,7 +28,7 @@ const AppRouter : React.FC = () => {
           <Route exact path="/settings" component={SettingsPage}/>
 
           {/*List Pages*/}
-          <Route exact path="/list" component={ListPage} />
+          <Route exact path="/list" component={ViewListPage} />
           <Route exact path="/list/create" component={CreateListPage} />
           <Route path="/list/:listId" component={ViewListPage} />
           <Route path="/list/:listId/edit" component={EditListPage} />

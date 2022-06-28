@@ -1,11 +1,11 @@
 import { IonAccordion, IonAccordionGroup, IonAlert, IonButton, IonButtons, IonCardContent, IonIcon, IonItem, IonLabel, IonList, IonLoading, IonRefresher, IonRefresherContent, IonSearchbar, IonSelect, IonSelectOption, IonText, IonToolbar, RefresherEventDetail } from "@ionic/react";
 import { close, filter } from "ionicons/icons";
 import React, { useEffect, useRef, useState } from "react";
-import CreateTaskFab from "../../components/fabs/create-task-fab/create-task-fab";
-import TaskItem from "../../components/task-item/task-item";
-import { getTasksListener } from "../../firebase/firestore/firestore-tasks";
-import { Task } from "../../interfaces/tasks";
-import PageTemplateDefault from "../page-templates/page-template-default";
+import CreateTaskFab from "../../../components/fabs/create-task-fab/create-task-fab";
+import TaskItem from "../../../components/task-item/task-item";
+import { getTasksListener } from "../../../firebase/firestore/firestore-tasks";
+import { Task } from "../../../interfaces/tasks";
+import PageTemplateDefault from "../../page-templates/page-template-default";
 import "./list-page.css"
 
 ////////////////////////////////////////////////////////
@@ -18,7 +18,7 @@ interface Props {}
 /*Component*/
 ////////////////////////////////////////////////////////
 
-const ListPage : React.FC<Props> = (props : Props) => {
+const ViewListPage : React.FC<Props> = (props : Props) => {
 
   ////////////////////////
   // Hooks
@@ -192,4 +192,4 @@ const ListPage : React.FC<Props> = (props : Props) => {
   );
 }
 
-export default ListPage;
+export default ViewListPage;
