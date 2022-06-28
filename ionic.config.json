@@ -1,0 +1,7 @@
+{
+  "name": "ToShop",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
